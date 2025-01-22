@@ -1,0 +1,363 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serifs;
+}
+.navbar{
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 42px;
+}
+.logo h2{
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu ul{
+    list-style: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    cursor: pointer;
+}
+.hero-cnt{
+    height: 328px;
+    width: 480px;
+}
+.hero-cnt h1{
+    font-size: 64px;
+    margin-bottom: 25px;
+}
+.hero-cnt h5{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.hero-cnt p{
+    font-size: 17px;
+    margin-bottom: 25px;
+    line-height: 27px;
+}
+.hero-cnt button{
+    font-size: 20px;
+    padding: 14px 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-property:background-color;
+    transition-timing-function: ease-in-out;
+}
+.hero-cnt button:hover{
+    background-color: #5083b4;
+    color: black;
+    border: none;
+}
+.hero-section{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 68px;
+    padding: 34px 42px;
+    height: calc(100% - 78px);
+}
+.hero-image{
+    height: 320px;
+    width: 680px;
+    display: flex;
+    justify-content: end;
+}
+.hero-image img{
+    height: 330px;
+}
+.logo-bar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+#f-1{
+    height: 38px;
+}
+#s-2{
+    height: 31px;
+}
+#t-3{
+    height: 17px;
+}
+#f-4{
+    height: 47px;
+}
+#f-5{
+    height: 44px;
+}
+.ri-menu-3-line{
+    display: none;
+}
+.skill-section{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    align-items: center;
+    cursor: pointer;
+}
+.html{
+    width: 25%;
+}
+.html p{
+    padding: 0px 10px;
+    font-size: 20px;
+}
+.css{
+    width: 25%;
+}
+.css p{
+    padding: 15px 0px;
+    font-size: 20px;
+}
+.contact-section{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+}
+.logo-section h6{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.logo-section p{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.logo-section{
+    width: 40%;
+}
+.logos{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+.main-contact input{
+    height: 50px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    color: black;
+    padding: 0px 5px;
+}
+.main-contact button{
+    padding: 15px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 1s;
+    transition-property:background-color;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+    font-size: 16px;
+}
+.main-contact button:hover{
+    background-color: #5083b4;
+    color: black;
+}
+@media  (max-width:1330px) {
+    .hero-cnt{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+@media (max-width:876px) {
+    .hero-cnt{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+        }
+        h5{
+            font-size: 15px;
+        }
+    }
+    .hero-image img{
+        height: 250px;
+    }
+    #f-1{
+        height: 18px;
+    }
+    #s-2{
+        height: 10px;
+    }
+    #t-3{
+        height: 10px;
+    }
+    #f-4{
+        height: 27px;
+    }
+    #f-5{
+        height: 24px;
+    }
+   .html img{
+    height: 160px;
+   }
+   .skill-section{
+    p{
+        font-size: 10px;
+    }
+   }
+   .css img{
+    height: 120px;
+   }
+   .logo-section{
+    h6{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    p{
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: 300;
+    }
+   }
+   .main-contact input{
+    width: 300px;
+   }
+}
+@media (max-width:713px) {
+    .menu li{
+        display: none;
+    }
+    .ri-menu-3-line{
+        display: unset;
+        font-size: 25px;
+    }
+    .logo h2{
+        font-size: 25px;
+    }
+    .hero-section{
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+     .hero-cnt{
+        width: 100%;
+     }
+     .contact-section{
+        align-items: baseline;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 16px;
+        h6{
+            font-size: 28px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 20px;
+            word-spacing: 3px;
+        }
+     }
+     .logo-section{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .main-contact{
+        width: 100%;
+    }
+     .html img{
+        height: 100px;
+       }
+       .skill-section{
+        p{
+            font-size: 7px;
+        }
+       }
+       .css img{
+        height: 90px;
+       }
+       h6{
+        font-size: 25px;
+        font-weight: 900;
+    }
+    p{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    .main-contact input{
+        width: 100%;
+    }
+}
+@media (max-width:414px) {
+    .hero-cnt{
+        padding: 10px 0px;
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 11px;
+        line-height: 12px;
+        font-weight: 500;
+    }
+    h5{
+        font-size: 12px;
+    }
+     button{
+        padding: 6px 15px ;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+    }
+    .hero-section{
+        gap: 10px;
+    }
+    #f-1{
+        height: 10px;
+    }
+    #s-2{
+        height: 7px;
+    }
+    #t-3{
+        height: 7px;
+    }
+    #f-4{
+        height: 17px;
+    }
+    #f-5{
+        height: 14px;
+    }
+    .skill-section{
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+    }
+    .html p{
+        display: none;
+    }
+    .css p{
+        display: none;
+    }
+    .contact-section{
+        h6{
+            font-size: 23px;
+        }
+    }
+    .main-contact input{
+        width: 100%;
+    }
+}
